@@ -23,7 +23,7 @@ locals {
 resource "aws_instance" "ec2" {
   ami           = local.yaml_rg.Ami_Id
   instance_type = local.yaml_rg.Instance_Type
-  key_name      = local.yaml_rg.KEY_NAME
+  #key_name      = local.yaml_rg.KEY_NAME
 
 
   user_data     = <<-EOF
