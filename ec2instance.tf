@@ -1,3 +1,21 @@
+terraform {
+  required_providers {
+    aws = {
+      source = "hashicorp/aws"
+      version = "5.19.0"
+    }
+
+  }
+}
+
+provider "aws" {
+
+  region = "us-west-2"
+  access_key = "AKIAYDNYBZNJH7QDJTP3"
+  secret_key = "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"
+
+}
+
 locals {
   yaml_rg = yamldecode(file("config.yaml"))
 }
